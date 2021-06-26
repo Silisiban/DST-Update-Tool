@@ -7,7 +7,7 @@ updatePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Togethe
 removePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data";
 renamePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts_backup.zip";
 replacePath =  "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/scripts/prefabs/";
-replaceFilesPath = os.path.join(os.environ['USERPROFILE']), 'Desktop';
+replaceFilesPath = os.path.join(os.environ["USERPROFILE"],"desktop/dst");
 replaceFiles = ["birdcage.lua", "rocks.lua", "birds.lua"];
 
 #Checks to see if the scripts file has been updated. before we do anything else.
@@ -42,8 +42,8 @@ def UnzipScriptsFolder():
 #Replaces the modified files for the custom gaming experience.
 def ReplaceFiles():
     try:
-        for file in replaceFiles:           
-            shutil.copy(os.path.join(replaceFilesPath,file),os.path.join(replacePath,file));
+        for file in replaceFiles:
+            shutil.copy(os.path.join(replaceFilesPath,file),os.path.join(replacePath,file));                                  
             print(f"{file} Was Replaced Successfully.");
     except FileNotFoundError as e:
             print(f"Error Replacing File {e.strerror}.");
