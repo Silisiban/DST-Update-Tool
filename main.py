@@ -2,7 +2,6 @@ import os;
 import shutil;
 import zipfile;
 
-
 #Path var that is what is changed when the game has updated.
 updatePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts.zip";
 removePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data";
