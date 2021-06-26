@@ -7,7 +7,7 @@ updatePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Togethe
 removePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data";
 renamePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts_backup.zip";
 replacePath =  "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/scripts/prefabs/";
-replaceFilesPath = "C:/Users/timot/Desktop/dst/";
+replaceFilesPath = os.path.join(os.environ['USERPROFILE']), 'Desktop';
 replaceFiles = ["birdcage.lua", "rocks.lua", "birds.lua"];
 
 #Checks to see if the scripts file has been updated. before we do anything else.
