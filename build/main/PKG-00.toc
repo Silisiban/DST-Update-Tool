@@ -46,8 +46,8 @@
   ('_ctypes', 'c:\\python39\\DLLs\\_ctypes.pyd', 'EXTENSION'),
   ('_bz2', 'c:\\python39\\DLLs\\_bz2.pyd', 'EXTENSION'),
   ('_lzma', 'c:\\python39\\DLLs\\_lzma.pyd', 'EXTENSION'),
-  ('libcrypto-1_1.dll', 'c:\\python39\\DLLs\\libcrypto-1_1.dll', 'BINARY'),
   ('libssl-1_1.dll', 'c:\\python39\\DLLs\\libssl-1_1.dll', 'BINARY'),
+  ('libcrypto-1_1.dll', 'c:\\python39\\DLLs\\libcrypto-1_1.dll', 'BINARY'),
   ('libffi-7.dll', 'c:\\python39\\DLLs\\libffi-7.dll', 'BINARY'),
   ('base_library.zip',
    'C:\\Users\\timot\\Desktop\\python apps\\DST Update '
