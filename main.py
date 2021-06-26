@@ -2,12 +2,13 @@ import os;
 import shutil;
 import zipfile;
 
+
 #Path var that is what is changed when the game has updated.
 updatePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts.zip";
 removePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data";
 renamePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts_backup.zip";
 replacePath =  "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/scripts/prefabs/";
-replaceFilesPath = os.path.join(os.environ["USERPROFILE"],"desktop/dst");
+replaceFilesPath = "lua";
 replaceFiles = ["birdcage.lua", "rocks.lua", "birds.lua"];
 
 #Checks to see if the scripts file has been updated. before we do anything else.
