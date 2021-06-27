@@ -8,7 +8,7 @@ removePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Togethe
 renamePath = "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts_backup.zip";
 replacePath =  "C:/Program Files (x86)/Steam/steamapps/common/Don't Starve Together/data/scripts/prefabs/";
 replaceFilesPath = "lua";
-replaceFiles = ["birdcage.lua", "rocks.lua", "birds.lua"];
+replaceFiles = ["birdcage.lua", "rocks.lua", "birds.lua", "veggies.lua"];
 
 #Checks to see if the scripts file has been updated. before we do anything else.
 def CheckIfUpdated():
