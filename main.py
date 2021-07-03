@@ -16,7 +16,7 @@ def CheckIfUpdated():
         return True;        
     else:
         print("The Game Has Not Been Updated.");
-        return;
+        return False;
 
 #Deletes the old script folder from the lasttime it was updated.
 def DeleteOldScriptFolder():
@@ -25,17 +25,18 @@ def DeleteOldScriptFolder():
             shutil.rmtree(f"{removePath}/scripts");   
             print("Scripts Folder was removed successfully.");     
         else:
-            print("Scripts Folder Doesn't Exist Skipping step.");
-            return;
+            print("Scripts Folder Doesn't Exist Skipping step.");            
     except OSError as e:
         print(f"Error {removePath}/scripts : {e.strerror}.");
 
-#Unzips the new scripts folder to the correct path so we can update the files.
+#Unzips the new scripts folder to the correct path so we can update the files and removes the the old zip file from the previous update.
 def UnzipScriptsFolder():
     try:
         with zipfile.ZipFile(updatePath, 'r') as zip_ref:
             zip_ref.extractall(removePath);            
-            print("Scripts Folder Has Successfully Been Extracted.");        
+            print("Scripts Folder Has Successfully Been Extracted.");
+            os.remove(renamePath);
+            print("The old backup scripts have been removed successfully.");      
     except OSError as e:
         print(f"There Was An Error Unzipping the Directory: {e.strerror}.");
 
@@ -60,6 +61,6 @@ def DoUpdate():
         print("Update Failed.");
 
 #Calls the main function that handles the update.
-print("********************************")
+print("********************************");
 DoUpdate();
 print("********************************");
