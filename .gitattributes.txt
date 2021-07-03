@@ -1,1 +1,1 @@
-*.* linguist-language=Python 
+build\main\*.* linguist-language=Python 
