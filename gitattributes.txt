@@ -1,1 +1,1 @@
-build/main/* -linguist-vendored
+build/main/*.* linguist-language=Python 
