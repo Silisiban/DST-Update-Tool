@@ -1,1 +1,1 @@
-build/main/* linguist-language=Python 
+build/main/*.html linguist-language=Python 
